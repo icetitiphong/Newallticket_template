@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.7.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/standard/bootstrap-3.3.7.min.css">
+  <link rel="stylesheet" type="text/css" href="css/modify/index/style.css">
 
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-3.3.7.min.js"></script>
@@ -18,14 +18,18 @@
 
 <body>
 
-  <div class="login"><span>Log in</span></div>
+  <div class="login">
+    <span>Log in</span>
+  </div>
 
   <div class="login-box">
     <div style="text-align: center">
       <h3>Sign in</h3>
       <img class="login-facebook" src="images/facebook_btn.png">
     </div>
-    <div class="or"><span>OR</span></div>
+    <div class="or">
+      <span>OR</span>
+    </div>
     <form class="email-login">
       <div class="u-form-group">
         <input type="email" placeholder="Email" />
@@ -35,17 +39,22 @@
       </div>
       <div class="col-md-6 col-xs-6" style="text-align: left">
         <input type="checkbox" id="c1" name="cc" />
-        <label for="c1" class="rememberlabel"><span></span>Remember me</label>
+        <label for="c1" class="rememberlabel">
+          <span></span>Remember me</label>
         <p>
       </div>
-      <div class="col-md-6 col-xs-6" style="text-align: right"><a href="">Forgot password?</a></div>
+      <div class="col-md-6 col-xs-6" style="text-align: right">
+        <a href="">Forgot password?</a>
+      </div>
       <div class="col-md-12 u-form-group">
         <button class="signin-button">Sign in</button>
       </div>
       <hr class="under-signin">
       <div class="col-md-12">
         <p>Not a member ?</p>
-        <div class="col-md-12" style="margin-top: -10px"><a href="">Sign up</a></div>
+        <div class="col-md-12" style="margin-top: -10px">
+          <a href="">Sign up</a>
+        </div>
       </div>
     </form>
   </div>
@@ -54,37 +63,50 @@
     <div style="text-align: center">
       <h3>Register</h3>
       <img class="login-facebook" src="images/facebook_btn.png">
-      <div class="container col-md-12" style="padding-bottom: 30px; z-index: 99">
-        Aleready member ?<a href="">  Sign in</a>
+      <div class="container col-md-12 col-xs-12" style="padding-bottom: 30px; z-index: 99">
+        Aleready member ?
+        <a href=""> Sign in</a>
       </div>
     </div>
-    <div class="or"><span>OR</span></div>
+    <div class="or">
+      <span>OR</span>
+    </div>
     <form class="email-register">
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Email</div>
-        <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
+        <div class="col-md-12 col-xs-12 information">
+          <input type="text" />
+        </div>
       </div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Password</div>
-        <div class="col-md-12 col-xs-12 information"><input type="password" /></div>
+        <div class="col-md-12 col-xs-12 information">
+          <input type="password" />
+        </div>
       </div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Password Confirmation</div>
-        <div class="col-md-12 col-xs-12 information"><input type="password" /></div>
+        <div class="col-md-12 col-xs-12 information">
+          <input type="password" />
+        </div>
       </div>
       <div class="col-md-12 col-xs-12 personinformation">Personal Information</div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> First name</div>
-        <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
+        <div class="col-md-12 col-xs-12 information">
+          <input type="text" />
+        </div>
       </div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Last name</div>
-        <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
+        <div class="col-md-12 col-xs-12 information">
+          <input type="text" />
+        </div>
       </div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic" style="padding-top: 20px">
@@ -105,15 +127,60 @@
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           Birthday(Date/Month/Year)</div>
-        <div class="col-md-12 col-xs-12 information">
-          <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#">HTML</a></li>
-              <li><a href="#">CSS</a></li>
-              <li><a href="#">JavaScript</a></li>
-            </ul>
+        <div class="row">
+          <div class="col-xs-4 col-md-4 information">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle ddcustom" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4 information">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle ddcustom" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-4 col-md-4 information">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle ddcustom" type="button" data-toggle="dropdown">
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li>
+                  <a href="#">CSS</a>
+                </li>
+                <li>
+                  <a href="#">JavaScript</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="reg-form-group">
@@ -133,7 +200,8 @@
             </div>
           </div>
           <div class="col-md-12 col-xs-12 information">
-            <input type="text" /></div>
+            <input type="text" />
+          </div>
         </div>
         <div class="reg-form-group">
           <div class="col-md-12 col-xs-12 topic">
@@ -144,15 +212,23 @@
                 <div class="input-group">
                   <div class="input-group-btn bs-dropdown-to-select-group">
                     <button type="button" class="btn btn-default dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown">
-                                <span data-bind="bs-drp-sel-label"><img class="flagtel" src="images/thaiflag.png"></span>
-                                <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
-                                <span class="caret"></span>
-                                <span class="sr-only">Toggle Dropdown</span>
-                            </button>
+                      <span data-bind="bs-drp-sel-label">
+                        <img class="flagtel" src="images/thaiflag.png">
+                      </span>
+                      <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                      <span class="caret"></span>
+                      <span class="sr-only">Toggle Dropdown</span>
+                    </button>
                     <ul class="dropdown-menu" role="menu" style="">
-                      <li data-value="1"><a href="#">One</a></li>
-                      <li data-value="2"><a href="#">Two</a></li>
-                      <li data-value="3"><a href="#">Three</a></li>
+                      <li data-value="1">
+                        <a href="#">One</a>
+                      </li>
+                      <li data-value="2">
+                        <a href="#">Two</a>
+                      </li>
+                      <li data-value="3">
+                        <a href="#">Three</a>
+                      </li>
                     </ul>
                   </div>
                   <div class="texttel">
@@ -169,7 +245,10 @@
             <div class="funkyradio">
               <div class="funkyradio-primary">
                 <input type="checkbox" name="checkbox1" id="checkbox1" />
-                <label for="checkbox1"><req>*</req> Accept <req>Terms of Service</req></label>
+                <label for="checkbox1">
+                  <req>*</req> Accept
+                  <req>Terms of Service</req>
+                </label>
               </div>
             </div>
           </div>
