@@ -68,12 +68,12 @@
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Password</div>
-        <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
+        <div class="col-md-12 col-xs-12 information"><input type="password" /></div>
       </div>
       <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
           <req>*</req> Password Confirmation</div>
-        <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
+        <div class="col-md-12 col-xs-12 information"><input type="password" /></div>
       </div>
       <div class="col-md-12 col-xs-12 personinformation">Personal Information</div>
       <div class="reg-form-group">
@@ -87,38 +87,123 @@
         <div class="col-md-12 col-xs-12 information"><input type="text" /></div>
       </div>
       <div class="reg-form-group">
+        <div class="col-md-12 col-xs-12 topic" style="padding-top: 20px">
+          <div class="col-md-3 col-xs-3">
+            <p>
+              <input type="radio" id="male" name="radio-group1" checked>
+              <label for="male">Male</label>
+            </p>
+          </div>
+          <div class="col-md-3 col-xs-3">
+            <p>
+              <input type="radio" id="female" name="radio-group1" checked>
+              <label for="female">Female</label>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="reg-form-group">
         <div class="col-md-12 col-xs-12 topic">
-          <req>*</req>Birthday(Date/Month/Year)</div>
-      </div>
-
-
-
-
-      <div class="col-md-12 u-form-group">
-        <button class="signin-button">Sign in</button>
-      </div>
-      <hr class="under-signin">
-      <div class="col-md-12">
-        <p>Not a member ?</p>
-        <div class="col-md-12" style="margin-top: -10px"><a href="">Sign up</a></div>
-      </div>
+          Birthday(Date/Month/Year)</div>
+        <div class="col-md-12 col-xs-12 information">
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="reg-form-group">
+          <div class="col-md-12 col-xs-12 topic" style="padding-top: 20px ; margin-bottom: -10px">
+            <div class="col-md-5 col-xs-5">
+              <p>
+                <input type="radio" id="id" name="radio-group">
+                <label for="id">ID Card No.</label>
+              </p>
+            </div>
+            <div class="col-md-2 col-xs-2"> OR </div>
+            <div class="col-md-5 col-xs-5">
+              <p>
+                <input type="radio" id="passport" name="radio-group">
+                <label for="passport">Passport No.</label>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 col-xs-12 information">
+            <input type="text" /></div>
+        </div>
+        <div class="reg-form-group">
+          <div class="col-md-12 col-xs-12 topic">
+            Mobile Phone Number</div>
+          <div class="col-md-12 col-xs-12 information">
+            <div class="container">
+              <div class="row">
+                <div class="input-group">
+                  <div class="input-group-btn bs-dropdown-to-select-group">
+                    <button type="button" class="btn btn-default dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown">
+                                <span data-bind="bs-drp-sel-label"><img class="flagtel" src="images/thaiflag.png"></span>
+                                <input type="hidden" name="selected_value" data-bind="bs-drp-sel-value" value="">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                    <ul class="dropdown-menu" role="menu" style="">
+                      <li data-value="1"><a href="#">One</a></li>
+                      <li data-value="2"><a href="#">Two</a></li>
+                      <li data-value="3"><a href="#">Three</a></li>
+                    </ul>
+                  </div>
+                  <div class="texttel">
+                    <input type="text" value="" class="form-control" name="text" style="  border-radius : 0px 12px 12px 0px;
+                    ">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reg-form-group">
+          <div class="col-md-12 col-xs-12 topic">
+            <div class="funkyradio">
+              <div class="funkyradio-primary">
+                <input type="checkbox" name="checkbox1" id="checkbox1" />
+                <label for="checkbox1"><req>*</req> Accept <req>Terms of Service</req></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reg-form-group">
+          <div class="col-md-12 col-xs-12 topic">
+            <div class="funkyradio">
+              <div class="funkyradio-primary">
+                <input type="checkbox" name="checkbox2" id="checkbox2" />
+                <label for="checkbox2"> &nbsp&nbsp Accept the newsletter</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 u-form-group">
+          <button class="signin-button">Sign up</button>
+        </div>
     </form>
-  </div>
+    </div>
 
 
 
-  <script>
-    $(".login-box").hide();
-    $(".login").click(function () {
-      $(".login-box").delay(100).fadeIn(100);
-    });
-    // $("#login-box-link").click(function () {
-    //   $(".email-login").delay(100).fadeIn(100);;
-    //   $(".email-signup").fadeOut(100);
-    //   $("#login-box-link").addClass("active");
-    //   $("#signup-box-link").removeClass("active");
-    // });
-  </script>
+    <script>
+      $(".login-box").hide();
+      $(".login").click(function () {
+        $(".login-box").delay(100).fadeIn(100);
+      });
+      // $("#login-box-link").click(function () {
+      //   $(".email-login").delay(100).fadeIn(100);;
+      //   $(".email-signup").fadeOut(100);
+      //   $("#login-box-link").addClass("active");
+      //   $("#signup-box-link").removeClass("active");
+      // });
+    </script>
 
 </body>
 
