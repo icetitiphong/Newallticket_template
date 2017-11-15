@@ -3,3 +3,12 @@ body {
 	font-family: 'Kanit', sans-serif;
 }
 
+.cardwrapper{
+	max-width: 300px;
+	/* max-height: 400px; */
+}
+
+.imgResponsive{
+	width: 100%;
+	height: auto;
+}
