@@ -1,0 +1,216 @@
+.wrapperChart div.seatCharts-container {
+	/*min-width: 700px;*/
+}
+.wrapperChart div.seatCharts-cell {
+
+	height: 16px;
+	width: 16px;
+	margin: 3px;
+	/* float: left; */
+	text-align: center;
+	outline: none;
+	font-size: 13px;
+	line-height:16px;
+	color: blue;
+
+}
+.wrapperChart div.seatCharts-seat {
+	background-color: green;
+	color: white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: default;
+}
+.wrapperChart div.seatCharts-seat:focus {
+	border: none;
+}
+/*
+.seatCharts-seat:focus {
+	outline: none;
+}
+*/
+
+.wrapperChart div.seatCharts-space {
+	background-color: white;
+}
+.wrapperChart div.seatCharts-row {
+	height: 50px;
+}
+
+.wrapperChart div.seatCharts-row:after {
+	clear: both;
+}
+
+.wrapperChart div.seatCharts-seat.selected {
+	background-color: aqua;
+}
+
+.wrapperChart div.seatCharts-seat.focused {
+	background-color: #6db131;
+}
+
+.wrapperChart div.seatCharts-seat.available {
+	background-color: green;
+}
+
+.wrapperChart div.seatCharts-seat.unavailable {
+	background-color: red;
+	cursor: not-allowed;
+}
+
+.wrapperChart ul.seatCharts-legendList {
+	list-style: none;
+}
+.wrapperChart li.seatCharts-legendItem {
+	margin-top: 10px;
+	line-height: 2;
+	/*display: inline-block;
+	padding-right: 30px;*/
+}
+
+/* body {
+	font-family: 'Roboto', sans-serif;
+    background-color:#fafafa;
+} */
+.wrapperChart a {
+	color: #b71a4c;
+}
+
+.wrapperChart .front-indicator {	
+	margin: 5px 32px 15px 32px;
+	background-color: #f6f6f6;	
+	color: #adadad;
+	text-align: center;
+	padding: 3px;
+	border-radius: 5px;
+	text-align: center; 
+	width: 75%;
+	height: auto;
+}
+
+.wrapperChart * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.wrapperChart {
+	width: 100%;
+	/* width: 900px; */ 
+	text-align: center;
+    /*margin-top:150px;*/
+}
+.wrapperChart .container {
+	margin: 0 auto;
+	width: 100%;
+	text-align: left;
+}
+.wrapperChart .booking-details {
+	float: left;
+	text-align: left;
+	/* margin-left: 635px; */
+	font-size: 12px;
+	position: relative;
+	height: 401px;
+    width: 20%;
+    padding-left: 10px;
+}
+.wrapperChart .booking-details h2 {
+	margin: 25px 0 20px 0;
+	font-size: 17px;
+}
+.wrapperChart .booking-details h3 {
+	margin: 5px 5px 0 0;
+	font-size: 14px;
+}
+.wrapperChart div.seatCharts-cell {
+	color: #182C4E;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	display: inline-block;	
+}
+.wrapperChart div.seatCharts-seat {
+	color: #182C4E;
+	cursor: pointer;	
+	font-weight: bold;
+}
+.wrapperChart div.seatCharts-row {
+	height: 35px;
+}
+.wrapperChart div.seatCharts-seat.available {
+	background-color: #89c1f1;
+	/*background: url(../../style/image/standard_seat.png);*/	
+	background-size: 25px 25px; 
+}
+.wrapperChart div.seatCharts-seat.available.a-class {
+	/* background: url(../../style/image/vip_seat.png); */
+	background-size: 25px 25px; 
+	background-color: #fb5555;	
+}
+.wrapperChart div.seatCharts-seat.available.b-class {
+	/* background: url(../../style/image/vip_seat.png); */
+	background-size: 25px 25px; 
+	background-color: #ffa2e7;	
+}
+.wrapperChart div.seatCharts-seat.available.c-class {
+	/* background: url(../../style/image/vip_seat.png); */
+	background-size: 25px 25px; 
+	background-color: #3482d2;	
+}
+.wrapperChart div.seatCharts-seat.focused {
+	background-color: #B9DEA0;
+	/* background: url(../../style/image/available_seat.png); */	
+	background-size: 25px 25px; 
+}
+.wrapperChart div.seatCharts-seat.selected {
+	background-color: #fbe755;
+	/* background: url(../../style/image/book_seat.png); */	
+	background-size: 25px 25px; 	
+}
+.wrapperChart div.seatCharts-seat.unavailable {
+	background-color: #7b676e;
+	color: white;
+	/* background: url(../../style/image/unavailable_seat.png); */	
+	background-size: 25px 25px; 
+}
+.wrapperChart div.seatCharts-seat.wheelchair {	
+	background-color: white;
+	color:transparent;
+	background: url(../../../../../style/image/wheelchair.png);	
+	background-size: 40px 25px;
+	
+}
+.wrapperChart div.seatCharts-container {
+	border-right: 1px dotted #adadad;
+	width: 75%;
+	padding: 20px;
+	float: left;
+	overflow-x:scroll;
+	white-space: nowrap;
+}
+.wrapperChart div.seatCharts-legend {
+	padding-left: 0px;
+	/*position: absolute;*/
+	bottom: 16px;
+}
+.wrapperChart ul.seatCharts-legendList {
+	padding-left: 0px;
+}
+.wrapperChart span.seatCharts-legendDescription {
+	margin-left: 5px;
+	line-height: 30px;
+	vertical-align: top;
+}
+.wrapperChart .checkout-button {
+	display: block;
+	margin: 10px 0;
+	font-size: 14px;
+}
+.wrapperChart #selected-seats {
+	max-height: 90px;
+	overflow-y: scroll;
+	overflow-x: none;
+	width: 230px;
+}
