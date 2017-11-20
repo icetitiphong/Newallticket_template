@@ -5,15 +5,10 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 100%;      
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
   transition: width 2s, height 2s, transform 2s
 }
 
-.middle:hover {	
-  width: 107%;  
-  z-index: 99;        
-}
-   
 .banner {
 	display: block;
 	width: 100%;	

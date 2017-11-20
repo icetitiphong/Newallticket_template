@@ -5,24 +5,284 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type='text/javascript' src="../assets/js/standard/jquery-3.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <link href="../assets/css/standard/layout.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="../assets/css/pages/cover/style.css" rel="stylesheet" type="text/css" media="screen" />
 <title>Insert title here</title>
+<style>
+		.spnEnterSite {
+			vertical-align:middle;
+			display: table-cell; 
+			color: #adadad;	
+		}
+
+		.headerCover, .footerCover {
+			background-color: #f6f6f6;
+		}
+
+		.footerCover span{
+			color: #868e96;	
+		}
+
+		.imageCover {
+			background-color: #f6f6f6;
+			width: 100%;
+			max-width: 1000px;
+			display: block;
+			margin: 0 auto;	
+		}
+
+		.middle {  
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-100%, -50%);
+		-ms-transform: translate(-100%, -50%);  
+		}
+
+		.banner {
+			display: block;
+			width: 100%;  
+		}
+
+		/* #buyTicket:before{
+			content:  "\0000a0";
+			display: inline-block;
+			height: 24px;
+			width: 24px;
+			line-height: 0px;
+			margin: 0 4px -6px -4px;
+			position: relative;
+			top: 0px;
+			left: 0px;    
+			background:transparent url(../../../../image/buttonImage/buyTicket.png) no-repeat left;
+			background-size: 100% 100%;
+		} */
+		#buyTicketBtn {
+			position: relative;
+			width:100%;
+			max-width:275px;
+			max-height:75px;
+			min-height:60px;
+			margin-bottom:20px;
+			padding: 0 10px;
+			text-align: left;
+			font-size: 16px;
+			color: #333;
+			background:gray;
+			padding: 0px !important;    
+			-moz-box-shadow:inset -1px -36px 50px -9px #95753d;
+			-webkit-box-shadow:inset -1px -36px 50px -9px #95753d;
+			box-shadow:inset 0px -36px 20px -11px #95753d;		
+			background: -webkit-gradient(linear, left top, left bottom, from(#95753d), to(#ffffff));
+			background: -moz-linear-gradient(top, #95753d, #ffffff);
+			background: linear-gradient(to bottom, #95753d, #ffffff);
+			
+			/* background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #95753d));
+			background:-moz-linear-gradient(top, #ffffff 5%, #95753d 100%);
+			background:linear-gradient(to bottom, #ffffff 5%, #95753d 100%); */
+			/* background:-webkit-linear-gradient(top, #ffffff 5%, #95753d 100%);
+			background:-o-linear-gradient(top, #ffffff 5%, #95753d 100%);
+			background:-ms-linear-gradient(top, #ffffff 5%, #95753d 100%); */	
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#95753d',GradientType=0);
+			background-color:#ffffff;
+			-moz-border-radius:42px;
+			-webkit-border-radius:42px;
+			border-radius:42px;
+			border:2px solid #e7dfd0;
+			display:inline-block;
+			cursor:pointer;
+			color:#f5f3f0;	
+			text-decoration:none;
+			text-shadow:2px 0px 0px #78633f;
+			
+		}
+
+		#buyTicketBtn:hover,
+		#buyTicketBtn:focus {
+			background: #95753d;
+			background: -webkit-gradient(linear, left top, left bottom, from(#a37e4b), to(#ffffff));
+			background: -moz-linear-gradient(top, #a37e4b, #ffffff);
+			background: linear-gradient(to bottom, #a37e4b, #ffffff);
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		#btnIconBuyTicketContainer
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-250%, -50%);
+		-ms-transform: translate(-250%, -50%);  
+		}
+
+		#buyTicketBtn img 
+		{  
+			display: block;
+			width: 80%;
+		}
+
+		#buyTicketBtn span
+		{
+			display:inline-block;
+			max-width: 100%;
+			vertical-align:middle;   
+			left: 20%;  	
+			position: relative;  	
+			color: white;    
+		}
+
+		#transportBtn {
+			position: relative;
+			width:100%;
+			max-width:275px;
+			max-height:75px;
+			min-height:60px;
+			margin-bottom:20px;
+			padding: 0 10px;
+			text-align: left;
+			font-size: 16px;
+			color: #333;
+			background:gray;
+			padding: 0px !important;    
+			-moz-box-shadow:inset -1px -36px 50px -9px #95753d;
+			-webkit-box-shadow:inset -1px -36px 50px -9px #95753d;
+			box-shadow:inset 0px -36px 20px -11px #95753d;		
+			background: -webkit-gradient(linear, left top, left bottom, from(#95753d), to(#ffffff));
+			background: -moz-linear-gradient(top, #95753d, #ffffff);
+			background: linear-gradient(to bottom, #95753d, #ffffff);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#95753d',GradientType=0);
+			background-color:#ffffff;
+			-moz-border-radius:42px;
+			-webkit-border-radius:42px;
+			border-radius:42px;
+			border:2px solid #e7dfd0;
+			display:inline-block;
+			cursor:pointer;
+			color:#f5f3f0;	
+			text-decoration:none;
+			text-shadow:2px 0px 0px #78633f;
+			
+		}
+
+		#transportBtn:hover,
+		#transportBtn:focus {
+			background: #95753d;
+			background: -webkit-gradient(linear, left top, left bottom, from(#a37e4b), to(#ffffff));
+			background: -moz-linear-gradient(top, #a37e4b, #ffffff);
+			background: linear-gradient(to bottom, #a37e4b, #ffffff);
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		#btnIconTransportContainer
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-310%, -50%);
+		-ms-transform: translate(-310%, -50%);  
+		}
+
+		#transportBtn img 
+		{  
+			display: block;
+			width: 80%;
+		}
+
+		#transportBtn span
+		{
+			display:inline-block;
+			max-width: 100%;
+			vertical-align:middle;   
+			left: 15%;  	
+			position: relative;  	
+			color: white;     
+		}
+
+		#shoppingBtn {
+			position: relative;
+			width:100%;
+			max-width:275px;
+			max-height:75px;
+			min-height:60px;
+			margin-bottom:20px;
+			padding: 0 10px;
+			text-align: left;
+			font-size: 16px;
+			color: #333;
+			background:gray;
+			padding: 0px !important;    
+			-moz-box-shadow:inset -1px -36px 50px -9px #95753d;
+			-webkit-box-shadow:inset -1px -36px 50px -9px #95753d;
+			box-shadow:inset 0px -36px 20px -11px #95753d;		
+			background: -webkit-gradient(linear, left top, left bottom, from(#95753d), to(#ffffff));
+			background: -moz-linear-gradient(top, #95753d, #ffffff);
+			background: linear-gradient(to bottom, #95753d, #ffffff);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#95753d',GradientType=0);
+			background-color:#ffffff;
+			-moz-border-radius:42px;
+			-webkit-border-radius:42px;
+			border-radius:42px;
+			border:2px solid #e7dfd0;
+			display:inline-block;
+			cursor:pointer;
+			color:#f5f3f0;	
+			text-decoration:none;
+			text-shadow:2px 0px 0px #78633f;
+			
+		}
+
+		#shoppingBtn:hover,
+		#shoppingBtn:focus {
+			background: #95753d;
+			background: -webkit-gradient(linear, left top, left bottom, from(#a37e4b), to(#ffffff));
+			background: -moz-linear-gradient(top, #a37e4b, #ffffff);
+			background: linear-gradient(to bottom, #a37e4b, #ffffff);
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		#btnIconShoppingContainer
+		{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-120%, -50%);
+		-ms-transform: translate(-120%, -50%);    
+		}
+
+		#shoppingBtn img 
+		{  
+			display: block;
+			width: 80%;
+		}
+
+		#shoppingBtn span
+		{
+			display:inline-block;
+			max-width: 100%;
+			vertical-align:middle;   
+			left: 45%;  	
+			position: relative;  	
+			color: white;     
+		}
+</style>
 </head>
-<body>
+<body onload="init()">
 	<div class="container-fluid" >
 		<div class="row height_80_px headerCover">	
 			<div class="col-1 col-sm-1 col-md-1 col-lg-1 height_100_pc" >		
 			</div>
 			<div class="col-5 col-sm-5 col-md-5 col-lg-5 txtAlgLeft height_100_pc" >			 	
 				<div style="vertical-align: middle; position: absolute;top: 50%;" class="middle">
-					<img alt="#" src="../assets/images/icon/Icon Web All Ticket_Allticket Logo.png" class="banner">
+					<a href="../index.html" >
+						<img alt="#" src="" class="banner" id="ticketsLogo">
+					</a>
 				</div>				
 			</div>
 			<div class="col-5 col-sm-5 col-md-5 col-lg-5 text-align-right height_100_pc dspTable">
-				<span class="spnEnterSite" ><u class="cursorPointer">ENTER SITE</u></span>
+				<span class="spnEnterSite" ><u class="cursorPointer"><a href = "../index.html">ENTER SITE</a></u></span>
 			</div>
 			<div class="col-1 col-sm-1 col-md-1 col-lg-1 height_100_pc" >
 			</div>
@@ -31,8 +291,10 @@
 		<div class="row">
 			<div class="col-1 col-sm-1 col-md-1 col-lg-1" ></div>
 			<div class="col-10 col-sm-10 col-md-10 col-lg-10" >
-				<div class="overview">			
-					<img alt="#" src="../assets/images/cover/website_coverpage.png" class="imageCover" >
+				<div class="overview">		
+					<a href="../index.html" >	
+						<img alt="#" src="" class="imageCover" id="ticketsCover">
+					</a>
 				</div>
 			</div>
 			<div class="col-1 col-sm-1 col-md-1 col-lg-1" ></div>
@@ -44,18 +306,18 @@
 			<div class="col-lg offset-lg-1 no-padding txtAlgCen" >
 				<div class="row">			
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 offset-lg-1 no-padding txtAlgCen" >				
-					<button id="buyTicketBtn" name="buyTicketBtn" style="text-align: left;">
-						<div id="btnIconBuyTicketContainer"><img  src="../assets/images/buttonImage/buyTicket.png" width="25" height="auto"/></div>
-						<span class="span_14">
-							&nbsp;ซื้อตั๋วการแสดง/กีฬา/สัมมนา
-							<br>
-							&nbsp;BUY TICKETS
-						</span>
+					<button id="buyTicketBtn" name="buyTicketBtn" style="text-align: left;" onclick="changeToHomePage('../index.html');">						
+							<div id="btnIconBuyTicketContainer"><img  src="" width="25" height="auto" id="buyTicketsIcon"/></div>
+							<span class="span_14">
+								&nbsp;ซื้อตั๋วการแสดง/กีฬา/สัมมนา
+								<br>
+								&nbsp;BUY TICKETS
+							</span>						
 					</button>
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 no-padding txtAlgCen" >
 					<button id="transportBtn" name="transportBtn" style="text-align: left;">
-						<div id="btnIconTransportContainer"><img  src="../assets/images/buttonImage/transpotTravels.png" width="25" height="auto"/></div>
+						<div id="btnIconTransportContainer"><img  src="" width="25" height="auto" id="transpotTravelsIcon"/></div>
 						<span class="span_14">
 							&nbsp;ซื้อตั๋วเดินทางและแหล่งท่องเที่ยว
 							<br>
@@ -64,8 +326,8 @@
 					</button>
 				</div>
 				<div class="col-12 col-sm-12 col-md-12 col-lg-3 no-padding txtAlgCen" >
-					<button id="shoppingBtn" name="shoppingBtn" style="text-align: left;">
-						<div id="btnIconShoppingContainer"><img  src="../assets/images/buttonImage/shopping.png" width="25" height="auto"/></div>
+					<button id="shoppingBtn" name="shoppingBtn" style="text-align: left;" >
+						<div id="btnIconShoppingContainer"><img  src="" width="25" height="auto" id="shoppingIcon"/></div>
 						<span class="span_14">
 							&nbsp;ช้อปปิ้ง
 							<br>
@@ -85,4 +347,19 @@
 		</div>
 	</div>
 </body>
+<script>
+
+		function init(){
+			document.getElementById('ticketsLogo').src = '../assets/images/icon/Icon Web All Ticket_Allticket Logo.png';
+			document.getElementById('ticketsCover').src = '../assets/images/cover/website_coverpage.png';
+			document.getElementById('buyTicketsIcon').src = '../assets/images/buttonImage/buyTicket.png';
+			document.getElementById('transpotTravelsIcon').src = '../assets/images/buttonImage/transpotTravels.png';
+			document.getElementById('shoppingIcon').src = '../assets/images/buttonImage/shopping.png';
+		}
+
+		function changeToPage(rcvTargetPage) {
+			window.open(rcvTargetPage,"_self");
+		}
+
+</script>
 </html>

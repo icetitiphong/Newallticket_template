@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/standard/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/standard/animate.css" />
     <link rel="stylesheet" href="assets/css/standard/owl.carousel-custom.css" />
-    <link rel="stylesheet" href="assets/css/standard/card-ticket.css" />
+    <link rel="stylesheet" href="assets/css/standard/cardticket.css" />
     <link rel="stylesheet" href="assets/css/pages/home/style.css" />
     <title>All Ticket By Counter Service : บริการขายตั๋วครบวงจร จองตั๋วออนไลน์ ซื้อตั๋วที่เคาน์เตอร์เซอร์วิสในร้าน 7-Eleven ทุกสาขา</title>
 
@@ -18,411 +18,18 @@
 <body>
     <div class="overlay"></div>
 
-    <header id = "header">
-        <nav id = "nav-sidebar">
-            <div class = "sidebar-header">
-                <a href="#" class="standard-logo">
-                    <img class = "img-fluid" src="assets/images/allticket-logo.png" alt="Allticket Logo">
-                </a>
-            </div>
-            <div class = "sidebar-setting"></div>
-            <div class = "sidebar-content"></div>
-        </nav>
-
-        <div class="header-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-10 col-lg-3 offset-lg-1 header-logo">
-                        <a href="#" class="standard-logo">
-                            <img src="assets/images/allticket-logo.png" alt="Allticket Logo">
-                        </a>
-                    </div>
-                    <div class="col-2 p-3 mt-1 d-block d-lg-none">
-                        <div id="nav-icon" class="navbar-toggler ">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-8 header-search">
-                        <div class="row" id = "subHeader">
-                            <div class="col-lg-5">
-                                <div class="input-group wrapSearchBox">
-                                    <input type="text" class="form-control" id="searchBox" placeholder="&#xf002; Search" />
-                                    <span class="form-control-clear fa fa-times-circle-o form-control-feedback" id="clearSearch"></span>
-                                </div>
-                            </div>
-                            <div class="col-lg-2 flag-wrapper">
-                                <img class="flag" src="assets/images/uk-flag.png" / alt="English">
-                                <img class="flag" src="assets/images/th-flag.png" / alt="ภาษาไทย">
-                            </div>
-                            <div class="col-lg-5 login-wrapper">
-                                <button class="btn btn-Login" id = "loginBtn">
-                                    <a class="atk-size-3" href="#Register">Register / Log In</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="primary-menu-wrapper d-none d-lg-block">
-            <div class="row">
-                <div class="col-md-12 navbar-container">
-                    <nav class="navbar navbar-expand-lg rounded" id="navbar-menu">
-                        <div class="navbar-collapse justify-content-md-center">
-                            <ul class="navbar-nav" id="mainMenu">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="./index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./eventTickets/concert.html">Concert</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown">Sport</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="./eventTickets/football.html">Football</a>
-                                        <a class="dropdown-item" href="./eventTickets/racing.html">Racing</a>
-                                        <a class="dropdown-item" href="./eventTickets/running.html">Running</a>
-                                        <a class="dropdown-item" href="./eventTickets/#">Others</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./eventTickets/themepark.html">Theme Park</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./eventTickets/seminar.html">Seminar</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./eventTickets/education.html">Education</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transportation</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="./eventTickets/airlines.html">Airline</a>
-                                        <a class="dropdown-item" href="./eventTickets/bus.html">Bus</a>
-                                        <a class="dropdown-item" href="./eventTickets/boat.html">Boat</a>
-                                        <a class="dropdown-item" href="./eventTickets/travel.html">Travel</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="./eventTickets/shopping.html">Shopping</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <div class="login-box" id="loginModal">
-                <button type="button" class="close" id="closeLoginModal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class = "p-3" style="text-align: center">
-                    <h3>Sign in</h3>
-                    <!-- <img class="login-facebook" src="assets/images/facebook_btn.png"> -->
-                </div>
-                <!-- <div class="or">
-                    <span>OR</span>
-                </div> -->
-                <form class="email-login mt-4">
-                    <div class="u-form-group">
-                        <input type="email" class="form-control" placeholder="Email" />
-                    </div>
-                    <div class="u-form-group mt-3">
-                        <input type="password" class="form-control" placeholder="Password" />
-                    </div>
-                    <div class="u-form-group groupoption">
-                        <div class="row">
-                            <!-- <div class="col-md-6 col-sm-6" style="text-align: left">
-                                <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span style="font-size: 14px ">Remember me</span>
-                                </label>
-                            </div> -->
-                            <div class="col-12 text-right">
-                                <a id = "forgotPwdBtn" href="#">Forgot password?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="u-form-group signin">
-                        <button class="signin-button">Sign in</button>
-                    </div>
-                    <hr class="under-signin">
-                    <div class="col-md-12 p-2">
-                        <p class = "font-weight-bold">Not a member ?</p>
-                        <div class="col-md-12" id="signUpBtn" style="margin-top: -10px">
-                            <a href="#">Sign up</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        
-            
-            <div class="signup-box" id="signupModal">
-                <button type="button" class="close" id="closeSignupModal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div style="text-align: center">
-                    <h3>Register</h3>
-                    <!-- <img class="login-facebook" src="assets/images/facebook_btn.png"> -->
-                    <div class="col-md-12 col-sm-12 mt-2" style="z-index: 99">
-                        Already member ?
-                        <a id="loginBtn-modal" href="#"> Sign in</a>
-                    </div>
-                </div>
-                <!-- <div class="or">
-                                <span>OR</span>
-                            </div> -->
-                <form class="email-register">
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <req>*</req> Email</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <req>*</req> Password</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <input type="password" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <req>*</req> Password Confirmation</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <input type="password" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-sm-12 personinformation">Personal Information</div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <req>*</req> First name</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <req>*</req> Last name</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <input type="text" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-3">
-                                    <label class="custom-control custom-radio">
-                                        <input id="radio1" name="radio" type="radio" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Male</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-3 col-sm-3">
-                                    <label class="custom-control custom-radio">
-                                        <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Female</span>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 topic">
-                            Birthday(Date/Month/Year)</div>
-                        <div class="col-md-12 col-sm-12 information">
-                            <div class="row">
-                                <div class="form-group ">
-                                    <select class="form-control dropdownCustom" id="select-date">
-                                        <option value="">01</option>
-                                        <option value="">02</option>
-                                        <option value="">03</option>
-                                        <option value="">04</option>
-                                        <option value="">05</option>
-                                        <option value="">06</option>
-                                        <option value="">07</option>
-                                        <option value="">08</option>
-                                        <option value="">09</option>
-                                        <option value="">10</option>
-                                        <option value="">11</option>
-                                        <option value="">12</option>
-                                        <option value="">13</option>
-                                        <option value="">14</option>
-                                        <option value="">15</option>
-                                        <option value="">16</option>
-                                        <option value="">17</option>
-                                        <option value="">18</option>
-                                        <option value="">19</option>
-                                        <option value="">20</option>
-                                        <option value="">21</option>
-                                        <option value="">22</option>
-                                        <option value="">23</option>
-                                        <option value="">24</option>
-                                        <option value="">25</option>
-                                        <option value="">26</option>
-                                        <option value="">27</option>
-                                        <option value="">28</option>
-                                        <option value="">29</option>
-                                        <option value="">30</option>
-                                        <option value="">31</option>
-                                    </select>
-                                </div>
-                                <div class="form-group " style="padding: 0px 10px 0px 10px">
-                                    <select class="form-control dropdownCustomMM" id="select-month">
-                                        <option>January</option>
-                                        <option>Feburay</option>
-                                        <option>March</option>
-                                        <option>April</option>
-                                        <option>May</option>
-                                        <option>June</option>
-                                        <option>July</option>
-                                        <option>August</option>
-                                        <option>September</option>
-                                        <option>October</option>
-                                        <option>November</option>
-                                        <option>December</option>
-                                    </select>
-                                </div>
-                                <div class="form-group ">
-                                    <select class="form-control dropdownCustom" id="select-year">
-                                        <option value="">1980</option>
-                                        <option value="">1981</option>
-                                        <option value="">1982</option>
-                                        <option value="">1983</option>
-                                        <option value="">1984</option>
-                                        <option value="">1985</option>
-                                        <option value="">1986</option>
-                                        <option value="">1987</option>
-                                        <option value="">1988</option>
-                                        <option value="">1989</option>
-                                        <option value="">1990</option>
-                                        <option value="">1991</option>
-                                        <option value="">1992</option>
-                                        <option value="">1993</option>
-                                        <option value="">1994</option>
-                                        <option value="">1995</option>
-                                        <option value="">1996</option>
-                                        <option value="">1997</option>
-                                        <option value="">1998</option>
-                                        <option value="">1999</option>
-                                        <option value="">2000</option>
-                                        <option value="">2001</option>
-                                        <option value="">2002</option>
-                                        <option value="">2003</option>
-                                        <option value="">2004</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reg-form-group">
-                            <div class="col-md-12 col-sm-12 topic">
-                                <label class="custom-control custom-radio">
-                                    <input id="radio1" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">ID Card No.</span>
-                                </label>
-                                OR &nbsp&nbsp&nbsp
-                                <label class="custom-control custom-radio">
-                                    <input id="radio2" name="radio" type="radio" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span class="custom-control-description">Passport No.</span>
-                                </label>
-                            </div>
-                            <div class="col-md-12 col-sm-12 information">
-                                <input type="text" />
-                            </div>
-                        </div>
-                        <div class="reg-form-group">
-                            <div class="col-md-12 col-sm-12 topic">
-                                Mobile Phone Number</div>
-                            <div class="col-md-12 col-sm-12 information">
-                                <div class="input-group">
-                                    <div class="input-group-btn">
-                                        <button type="button" class="btn btn-secondary dropdown-toggle telcountry" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <img src="assets/images/thaiflag.png" style="width: 20px">
-                                        </button>
-                                        <div class="dropdown-menu">
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-control" placeholder="099 123 4567">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reg-form-group">
-                            <div class="col-md-12 col-sm-12 topic">
-                                <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span style="font-size: 14px ">
-                                        <req>*</req> Accept
-                                        <req>Terms of Service</req>
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="reg-form-group">
-                            <div class="col-md-12 col-sm-12 topic">
-                                <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                    <input type="checkbox" class="custom-control-input">
-                                    <span class="custom-control-indicator"></span>
-                                    <span style="font-size: 14px ">
-                                        &nbsp Accept the newsletter
-                                    </span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12 u-form-group">
-                        <button class="signin-button" type="button">Sign up</button>
-                    </div>
-                </form>
-            </div>
-            
-            <div class="forgot-box" id="forgotPasswordModal">
-                <button type="button" class="close" id="closeForgotBox">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="text-center mt-2">
-                    <h5>Forgot Password</h5>
-                </div>
-                <form class="forgot-password">
-                    <div class="reg-form-group">
-                        <div class="col-md-12 col-sm-12 mt-4">
-                            <req>*</req> Email</div>
-                        <div class="col-md-12 col-sm-12 mt-2">
-                            <input id="forgotPwd-value" type="email" class="form-control" />
-                        </div>
-                    </div>
-                    <div class="col-md-12 u-form-group text-center">
-                        <button class="signin-button" type="button">Confirm</button>
-                    </div>
-                </form>
-            </div>
-   </header>
+    <div id="headerContent"></div>
 
     <main>
         <section id="slider">
-            <div class = "owl-carousel">
-                    <img src="assets/images/Slide All Ticket-01.png" />
-                    <img src="assets/images/Slide All Ticket-02.png" />
-                    <img src="assets/images/Slide All Ticket-03.png" />
-                    <img src="assets/images/Slide All Ticket-04.png" />
-                    <img src="assets/images/Slide All Ticket-05.png" />
-                </div>
+            <div class="owl-carousel">
             </div>
-            
+            </div>
+
         </section>
 
 
-        <section id = "card-ticket" class = "mt-3">
+        <section id="card-ticket" class="mt-3">
 
             <!-- Card TIcket -->
 
@@ -431,19 +38,22 @@
                     <div class="container">
                         <div class="row ticket-recommend">
                             <div class="col-6 border-ticket-title text-primary">
-                                <img src = "assets/images/icon_ticket_recommend.png"/>
+                                <img src="assets/images/icon_ticket_recommend.png" />
                             </div>
                             <div class="col-6 viewall">
-                                <a href="./eventTickets/allevent.html"><i class="fa fa-plus"></i> view all</a>
+                                <a href="./eventTickets/allevent.html">
+                                    <i class="fa fa-plus"></i> view all</a>
                             </div>
                         </div>
-                        <div class="row" style="text-align: center; padding-top: 20px">
+                        <div class="row cpt20">
                             <div class="col-12 col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage1" src="" alt="Card image cap">
                                     <div class="card-buyTicket">
                                         <a href="#">
                                             <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -452,25 +62,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">31 - 10</span>
+                                            <span class="textblack">31 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                    </a>
                                     </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <img class="card-img-top imgResponsive" id="cardImage2" src="" alt="Card image cap">
                                     <div class="card-buyTicket">
                                         <a href="#">
                                             <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -479,25 +88,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage3" src="" alt="Card image cap">
                                     <div class="card-buyTicket soldout">
                                         <a href="#">
                                             <i class="fa fa-ban" aria-hidden="true"></i>
@@ -506,25 +114,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage4" src="" alt="Card image cap">
                                     <div class="card-buyTicket soldout">
                                         <a href="#">
                                             <i class="fa fa-ban" aria-hidden="true"></i>
@@ -533,17 +140,14 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
                                 </div>
                             </div>
                         </div>
@@ -553,19 +157,22 @@
                     <div class="container">
                         <div class="row ticket-recommend">
                             <div class="col-6 text-danger border-ticket-title">
-                                <img src = "assets/images/icon_ticket_hot.png"/>
+                                <img src="assets/images/icon_ticket_hot.png" />
                             </div>
                             <div class="col-6 viewall">
-                                <a href="./eventTickets/allevent.html"><i class="fa fa-plus"></i> view all</a>
+                                <a href="./eventTickets/allevent.html">
+                                    <i class="fa fa-plus"></i> view all</a>
                             </div>
                         </div>
-                        <div class="row" style="text-align: center; padding-top: 20px">
+                        <div class="row cpt20">
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage5" src="" alt="Card image cap">
                                     <div class="card-buyTicket">
                                         <a href="#">
                                             <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -574,25 +181,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">31 - 10</span>
+                                            <span class="textblack">31 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage6" src="" alt="Card image cap">
                                     <div class="card-buyTicket">
                                         <a href="#">
                                             <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -601,25 +207,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage7" src="" alt="Card image cap">
                                     <div class="card-buyTicket soldout">
                                         <a href="#">
                                             <i class="fa fa-ban" aria-hidden="true"></i>
@@ -628,25 +233,24 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
-                                </div>
                             </div>
                             <div class="col-md-6 col-sm-6 col-lg-3 card cardwrapper">
                                 <div class="cardbox">
-                                    <div class="card-overlay">
-                                        <img src="assets/images/cursor.png">
-                                    </div>
-                                    <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                    <a href="./eventInfo/eventInfo.html">
+                                        <div class="card-overlay">
+                                            <img src="assets/images/cursor.png">
+                                        </div>
+                                    </a>
+                                    <img class="card-img-top imgResponsive" id="cardImage8" src="" alt="Card image cap">
                                     <div class="card-buyTicket soldout">
                                         <a href="#">
                                             <i class="fa fa-ban" aria-hidden="true"></i>
@@ -655,17 +259,14 @@
                                     </div>
                                     <div class="row cardfooter">
                                         <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                            <span style="color: black">9 - 10</span>
+                                            <span class="textblack">9 - 10</span>
                                             <br>
-                                            <span style="font-size: 12px"> DEC/2017 </span>
+                                            <span class="font12"> DEC/2017 </span>
                                         </div>
                                         <div class="col-sm-7 eventName text_overflow">
                                             BMMF 2017
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12 socialFunction">
-                                    <img src="assets/images/likeshare.png">
                                 </div>
                             </div>
                         </div>
@@ -676,21 +277,24 @@
         </section>
 
 
-        <section class = "mt-4 p-3" id="slideCard">
+        <section class="mt-4 p-3" id="slideCard">
             <div class="container">
-                <div class = "row">
+                <div class="row">
                     <div class="col-12 text-right pb-3">
-                        <a href="./eventTickets/allevent.html"><i class="fa fa-plus"></i> view all</a>
+                        <a href="./eventTickets/allevent.html">
+                            <i class="fa fa-plus"></i> view all</a>
                     </div>
                 </div>
                 <div class="row">
-                    <div class = "owl-carousel">
+                    <div class="owl-carousel">
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive"  id="cardImage9" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw"></i>
@@ -699,25 +303,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive" id="cardImage10" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -726,25 +329,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive" id="cardImage11" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -753,25 +355,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive" id="cardImage12" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -780,25 +381,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive" id="cardImage13" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -807,25 +407,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
                         <div class="col cardwrapper">
                             <div class="cardbox">
-                                <div class="card-overlay">
-                                    <img src="assets/images/cursor.png">
-                                </div>
-                                <img class="card-img-top imgResponsive" src="assets/images/bmmf.jpg" alt="Card image cap">
+                                <a href="./eventInfo/eventInfo.html">
+                                    <div class="card-overlay">
+                                        <img src="assets/images/cursor.png">
+                                    </div>
+                                </a>
+                                <img class="card-img-top imgResponsive" id="cardImage14" src="" alt="Card image cap">
                                 <div class="card-buyTicket">
                                     <a href="#">
                                         <i class="fa fa-shopping-cart fa-fw" aria-hidden="true"></i>
@@ -834,144 +433,24 @@
                                 </div>
                                 <div class="row cardfooter">
                                     <div class="col-sm-5 col-md-5 eventDate text_overflow">
-                                        <span class = "card-date">31 - 10</span>
+                                        <span class="card-date">31 - 10</span>
                                         <br>
-                                        <span style="font-size: 12px"> DEC/2017 </span>
+                                        <span class="font12"> DEC/2017 </span>
                                     </div>
                                     <div class="col-sm-7 eventName text_overflow">
                                         AVATAR
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 socialFunction">
-                                <img src="assets/images/likeshare.png">
-                            </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer>
-        <div class="social-logo-wrapper mt-5 pb-3">
-            <div class="row">
-                <div class="col-6 col-sm-6 logo-facebook">
-                    <img src="assets/images/fb.png" />
-                </div>
-                <div class="col-6 col-sm-6 logo-youtube">
-                    <img src="assets/images/yt.png" />
-                </div>
-            </div>
-        </div>
-    
-        <section class="footer-detail">
-            <div class="row">
-                <aside id="aboutUs" class="col-sm-12 col-md-4">
-                    <h3>ABOUT US</h3>
-    
-                    <div class="row">
-                        <div class="col-12">
-                            <p>
-                                Counter Service All Ticket
-                                <br> บริการจำหน่ายตั๋วออนไลน์ คอนเสิร์ต การแสดง มหกรรมกีฬา
-                                และการเดินทางต้องที่เคาน์เตอร์เซอวิส ตลอด 24 ชั่วโมง
-                            </p>
-                        </div>
-                    </div>
-                </aside>
-    
-                <aside id="faq" class="col-sm-12 col-md-4">
-                    <h3>FAQ</h3>
-    
-                    <div class="row">
-                        <div class="col-12">
-                            <ul class="footer">
-                                <li>
-                                    <i class="fa fa-chevron-right"></i>
-                                    <span><a href = "#">How to Buy</a></span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-chevron-right"></i>
-                                    <span><a href = "#">How to Pay</a></span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-chevron-right"></i>
-                                    <span><a href = "#">Pick Up Ticket</a></span>
-                                </li>
-                                <li>
-                                    <i class="fa fa-chevron-right"></i>
-                                    <span><a href = "#">Privacy Policy</a></span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-    
-                <aside id="contactUs" class="col-sm-12 col-md-4">
-                    <h3>CONTACT US</h3>
-    
-                    <div class="row">
-                        <div class="col-12">
-                            <ul class="footer">
-                                <li>
-                                    <div class="contact-detail">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-2x fa-home"></i>
-                                        </div>
-    
-                                        <div class="contact-desc">
-                                            <span>
-                                                COUNTER SERVICE CO.LTD
-                                                <br> 119 TARASATHON BLDG.,FLOOR 4-6
-                                                <br> SATHORN SOI 5, SOUTH SATHORN RD.,
-                                                <br> THUNGMAHAMEK, SATHORN, BANGKOK 10120,
-                                                <br> THAILAND
-                                            </span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="contact-detail">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-2x fa-envelope"></i>
-                                        </div>
-    
-                                        <div class="contact-desc">
-                                            <span class="font-weight-normal">Customer Support</span>
-                                            <p>support@allticket.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="contact-detail">
-                                        <div class="contact-icon">
-                                            <i class="fa fa-2x fa-envelope"></i>
-                                        </div>
-    
-                                        <div class="contact-desc">
-                                            <span class="font-weight-normal">Customer Support</span>
-                                            <p>support@allticket.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-            <aside id="copyright">
-                <div class="row mt-4">
-                    <div class="col-12 text-center">
-                        <h5 class = "font-weight-light">
-                            © 2018 Counter Service Co., Ltd. All Rights Reserved © ลิขสิทธิ์ โดย บริษัท เคาน์เตอร์เซอร์วิส™ จำกัด
-                        </h5>
-                    </div>
-                </div>
-            </aside>
-        </section>
-    </footer>
+    <div id="footerContent"></div>
 </body>
 
 <script src="assets/js/standard/jquery-3.2.1.min.js"></script>

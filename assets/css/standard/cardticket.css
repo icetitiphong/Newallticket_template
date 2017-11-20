@@ -4,6 +4,7 @@
 	border-top: none;
 	border-left: none;
 	padding-bottom: 40px;
+	margin : 0 auto; 
 }
 
 .imgResponsive {
@@ -46,6 +47,30 @@
 .card-title {
 	text-align: center;
 }
+
+.ticket-recommend:after { 
+    content: "";  
+    display: block; 
+    width: 90%; 
+    margin : 0 auto; 
+    border-bottom: 1.5px solid #8a8a88; 
+    padding-bottom: 1rem; 
+} 
+ 
+.ticket-recommend .border-ticket-title:after { 
+    content: "";  
+    display: block; 
+    width: 40%; 
+    border-bottom : 5px solid; 
+    border-radius: 10px; 
+    bottom : -37%; 
+    position: absolute; 
+} 
+ 
+.ticket-recommend img { 
+    max-height: 50px; 
+    max-width: 100%; 
+} 
 
 .eventName {
 	color: black;
@@ -96,19 +121,19 @@
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.5);
 	transition: opacity .5s ease-in-out;
+	z-index: 100; 
 }
 
 .card-overlay img {
+	margin: 0 auto;
 	position: relative;
 	top: 45%;
 }
 
-.socialFunction {
-	padding-top: 20px;
-	text-align: left;
-	margin-left: -20px;
-	cursor: pointer;
-}
+.card-date { 
+    color: black; 
+    font-size: 12px; 
+} 
 
 .iconTopic {
 	padding-left: 10px;
@@ -126,6 +151,7 @@
 
 .viewall a {
 	vertical-align: -100%;
+	text-decoration: none; 
 }
 
 .eventtopic {
@@ -162,5 +188,24 @@
 		height: auto;
 		font-size: 18px;
 	}
+
+	 
+    .border-ticket-title { 
+        margin-top : 1rem; 
+    } 
+ 
+    .ticket-recommend img { 
+        max-height: 30px; 
+    } 
+ 
+    .ticket-recommend .border-ticket-title:after { 
+        width : 80%; 
+        bottom : -58%; 
+	} 
+	
+	.eventName { 
+        font-size: 12px; 
+        text-align: center; 
+    } 
 
 }
